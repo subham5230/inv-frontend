@@ -1,2 +1,1 @@
-export const SERVER_URL = "https://invoice-backend-subham.herokuapp.com/Summer_Internship_Backend/";
-export const ROLL_NUMBER = "1806259";
+export const SERVER_URL = "https://invoice-mng.herokuapp.com/";
