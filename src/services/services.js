@@ -20,7 +20,7 @@ export function callInfiniteScroll(count, searchVal, sortOrder, sortBy) {
 
 export function callPredict(predData) {
   return axios.post(
-    `http://127.0.0.1:5000/predict`,
+    `https://inv-flask.herokuapp.com/predict`,
       {
         id: `${ROLL_NUMBER}`,
         data: predData,
