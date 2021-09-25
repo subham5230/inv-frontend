@@ -23,7 +23,7 @@
 }
 
 #scrollableTableBody {
-  max-height: 68vh;
+  max-height: 65vh;
   overflow-y: scroll;
   margin: 0;
   text-align: left;

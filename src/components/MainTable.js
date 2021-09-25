@@ -420,7 +420,7 @@ export default function EnhancedTable() {
             aria-labelledby="tableTitle"
             aria-label="enhanced table"
             stickyHeader
-            style={{padding: 0}} 
+            style={{padding: 0, maxHeight: "20"}} 
           >
           <EnhancedTableHead
               classes={classes}

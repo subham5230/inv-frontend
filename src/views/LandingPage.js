@@ -20,12 +20,9 @@ const useStyles = makeStyles((theme) => ({
   },
   abcContainer: {
     display: "flex",
-    justifyContent: "start",
+    justifyContent: "center",
     alignItems: "center",
-  },
-  hrcLogo: {
-    width: "23.483rem",
-    height: "4.95rem",
+    width: "90vw"
   },
   abcLogo: {
     width: "4.4rem",
@@ -34,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
   abcText: {
     fontFamily: "sans-serif",
     fontSize: "3.5rem",
-    fontWeight: "bold",
     marginLeft: "0.5rem",
   },
 
@@ -69,13 +65,15 @@ const useStyles = makeStyles((theme) => ({
     // flexDirection: " column",
     display: "grid",
     gridTemplateRows: "10% 90%",
+    marginTop:"15px"
   },
   gridMenu: {
     display: "flex",
     justifyContent: "space-between",
     // padding: "2.5rem",
   },
-  tableContainer: {},
+  tableContainer: {
+  },
   invoiceTable: {},
 }));
 
@@ -89,21 +87,17 @@ const LandingPage = () => {
           <img src={abcLogo} className={classes.abcLogo} />
           <div className={classes.abcText}>ABC Products</div>
         </div>
-        <div className={classes.hrcContainer}>
-          <img src={hrcLogo} className={classes.hrcLogo} />
-        </div>
       </div>
       <div className={classes.mainGridPanel}>
-        <div className={classes.gridHeader}>Invoice List</div>
+        <div className={classes.gridHeader}><span style={{paddingBottom:"100px"}}>Invoice List</span></div>
 
         <Paper className={classes.gridPanelArea} elevation={0}>
           <div className={classes.gridMenu}>
             <Grid
               container
               direction="row"
-              justify="flex-start"
-              alignItems="flex-start"
               spacing={2}
+              md={3}
             >
               <Grid item>
                 <PredictBtn />
